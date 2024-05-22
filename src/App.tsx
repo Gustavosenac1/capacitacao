@@ -1,24 +1,12 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion"
 import { cn } from "@/lib/utils"
-import { Search } from 'lucide-react'
+import { ChevronDown } from 'lucide-react'
+import { NavigationMenuDemo } from "@/itens/menu/menu"
 
 export default function App() {
 
   return (
     <div className="p-20">
-    <Accordion type="single" collapsible>
-      <AccordionItem value="item-1">
-        <AccordionTrigger>Is it accessible?</AccordionTrigger>
-        <AccordionContent>
-          Yes. It adheres to the WAI-ARIA design pattern.
-        </AccordionContent>
-      </AccordionItem>
-    </Accordion>
+      <NavigationMenuDemo />
     </div>
   )
 }
