@@ -10,7 +10,7 @@ import { Search } from 'lucide-react'
 export default function App() {
 
   return (
-    <div className="p-2">
+    <div className="p-20">
     <Accordion type="single" collapsible>
       <AccordionItem value="item-1">
         <AccordionTrigger>Is it accessible?</AccordionTrigger>
