@@ -1,12 +1,14 @@
 import { cn } from "@/lib/utils"
-import { ChevronDown } from 'lucide-react'
 import { NavigationMenuDemo } from "@/itens/menu/menu"
+import Page from "@/itens/menu/page"
 
 export default function App() {
-
   return (
-    <div className="p-20 font-mono">
+    <div className="p-12 font-mono">
       <NavigationMenuDemo />
+      <div>
+        <Page />
+      </div>
     </div>
   )
 }

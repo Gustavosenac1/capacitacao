@@ -1,9 +1,9 @@
 "use client"
 
-import * as React from "react"
-import { cn } from "@/lib/utils"
-import { Search } from 'lucide-react';
-import { FaceIcon } from "@radix-ui/react-icons"
+import * as React from "react";
+import { cn } from "@/lib/utils";
+import { File } from 'lucide-react';
+import { Link } from "@radix-ui/react-navigation-menu";
 import {
     NavigationMenu,
     NavigationMenuContent,
@@ -12,7 +12,7 @@ import {
     NavigationMenuList,
     NavigationMenuTrigger,
     navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu"
+} from "@/components/ui/navigation-menu";
 
 const components: { title: string; href: string; description: string }[] = [
     {
@@ -57,7 +57,7 @@ export function NavigationMenuDemo() {
         <NavigationMenu>
             <NavigationMenuList>
                 <NavigationMenuItem>
-                    <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
+                    <NavigationMenuTrigger>Conheça mais</NavigationMenuTrigger>
                     <NavigationMenuContent>
                         <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                             <li className="row-span-3">
@@ -66,7 +66,7 @@ export function NavigationMenuDemo() {
                                         className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                                         href="/"
                                     >
-                                        <Search />
+                                        <File />
                                         <div className="mb-2 mt-4 text-lg font-medium">
                                             shadcn/ui
                                         </div>
@@ -105,6 +105,13 @@ export function NavigationMenuDemo() {
                             ))}
                         </ul>
                     </NavigationMenuContent>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                    <Link href="/docs">
+                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                            Documentation
+                        </NavigationMenuLink>
+                    </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                 </NavigationMenuItem>
