@@ -9,7 +9,9 @@ export default function App() {
       <NavigationMenuDemo />
       <div>
         <Page />
+        <div className="flex justify-center">
         <CardWithForm />
+        </div>
       </div>
     </div>
   )
