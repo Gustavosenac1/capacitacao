@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import { NavigationMenuDemo } from "@/itens/menu/menu";
-import Page from "@/itens/menu/page";
-import { CardWithForm } from "./itens/menu/card";
+import Page from "@/itens/page/page";
+import { CardWithForm } from "@/itens/card/card";
 
 export default function App() {
   return (
