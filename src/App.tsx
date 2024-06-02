@@ -6,11 +6,13 @@ import { CardWithForm } from "@/itens/card/card";
 export default function App() {
   return (
     <div className="p-12 font-mono">
-      <NavigationMenuDemo />
+      <div className="mb-10">
+        <NavigationMenuDemo />
+      </div>
       <div>
         <Page />
         <div className="flex justify-center">
-        <CardWithForm />
+          <CardWithForm />
         </div>
       </div>
     </div>
